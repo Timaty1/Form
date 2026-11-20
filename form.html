@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Регистрация</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #eef2f7;
+    padding: 20px;
+  }
+
+  form {
+    width: 400px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 22px;
+  }
+
+  label {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="date"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 6px;
+    margin-top: 4px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  textarea {
+    height: 70px;
+  }
+
+  .group {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .group label {
+    display: inline-block;
+    margin-right: 12px;
+    margin-top: 4px;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    background: #4a6cf7;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background: #3552c9;
+  }
+
+  .agree {
+    margin-top: 15px;
+    font-size: 13px;
+  }
+
+  .agree input {
+    margin-right: 6px;
+  }
+</style>
+</head>
+<body>
+
+<form>
+  <h1>Регистрация</h1>
+
+  <label>Имя</label>
+  <input type="text" name="name">
+
+  <label>Фамилия</label>
+  <input type="text" name="surname">
+
+  <label>Email</label>
+  <input type="email" name="email">
+
+  <label>Пароль</label>
+  <input type="password" name="password">
+
+  <label>Дата рождения</label>
+  <input type="date" name="birthday">
+
+  <div class="group">
+    <p>Пол:</p>
+    <label><input type="radio" name="gender" value="m"> Мужской</label>
+    <label><input type="radio" name="gender" value="f"> Женский</label>
+  </div>
+
+  <div class="group">
+    <p>Интересы:</p>
+    <label><input type="checkbox" name="hobby" value="sport"> Спорт</label>
+    <label><input type="checkbox" name="hobby" value="music"> Музыка</label>
+    <label><input type="checkbox" name="hobby" value="it"> IT</label>
+  </div>
+
+  <label>Страна</label>
+  <select name="country">
+    <option>Украина</option>
+    <option>Польша</option>
+    <option>Германия</option>
+    <option>США</option>
+  </select>
+
+  <label>О себе</label>
+  <textarea name="about"></textarea>
+
+  <div class="agree">
+    <input type="checkbox" name="agree"> Я согласен с правилами
+  </div>
+
+  <button type="submit">Зарегистрироваться</button>
+</form>
+
+</body>
+</html>
